@@ -6,7 +6,7 @@ import cors from 'cors'
 
 
 
-const server = new Server();
+const server = Server.instance;
 
 //BodyParser antes del router
 server.app.use( bodyParser.urlencoded({extended: true}));
